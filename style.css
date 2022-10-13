@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Bungee Inline';
+}
+
+.card {
+  height: 330px;
+  width: 300px;
+  text-align: center;
+  background-image: url(./images/stamford-bridge.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.card img{
+  position: absolute;
+  width: 280px;
+  height: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.inner-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.4) 
+  0%,rgba(0,0,0,0.4) 25%,rgba(1, 32, 204, 0.6) 
+  50%,rgba(246, 245, 245, 0.6) 75%,rgba(44, 93, 228, 0.6) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  transition: 2s;
+  border-radius: 10px;
+}
+
+.card:hover .inner-container{
+  background-position: 100% 100%;
+}
+
+#utd {
+  background-image: url(./images/old-trafford.jpg);
+}
+
+#utd-lin {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.4) 
+  0%,rgba(0,0,0,0.4) 25%,rgba(204, 1, 1, 0.6) 
+  50%,rgba(246, 245, 245, 0.6) 75%,rgba(236, 39, 39, 0.6) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  transition: 2s;
+}
+
+#utd:hover #utd-lin{
+  background-position: 100% 100%;
+}
